@@ -1,2 +1,9 @@
-/Virtual_environment
+/venv
+/.streamlit
 /Dataset
+/Notebook
+/Models
+
+
+
+
