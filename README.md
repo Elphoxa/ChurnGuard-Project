@@ -130,7 +130,9 @@ To run the Streamlit app, execute the following command:
     - Access to the View Data page may be restricted as the secrets file is not committed to Git.
     - Exploratory Data Analysis (EDA): Provides visualizations to explore the dataset and understand
         the underlying patterns (Interactive dashboard allows you to interact with the data and explore different visualizations).
-    - Key Performance Indicators (KPIs): Displays important metrics such as churn rate, average total charges, etc.
+    - Key Performance Indicators (KPIs): Displays important metrics such as churn rate, average total revenue per user, average recharge frequency, etc.
+    
+-**Docker Image:** The Docker image for the ChurnGuard API is available on [Docker Hub](https://hub.docker.com/repository/docker/elphoxa56/churn_guard), ensuring efficient API deployment and containerization.
 
 ## 📝 Article
 
