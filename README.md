@@ -21,7 +21,8 @@
 - [🤝 Contributing](#contributing)
 - [🔏 License](#license)
 - [📚 References](#references)
-- [👤 Author](#author)
+- [👥 Team Antimony](#Team-Antimony)
+
 
 ## 🎈 Introduction
 The ChurnGuard Project is a machine learning initiative aimed at predicting customer churn for an African telecommunications company (Expresso). It empowers providers to proactively retain customers with predictive analytics. The Project aims to develop a machine learning model capable of predicting customer churn. By leveraging historical customer data, the model assists businesses in identifying customers at risk of leaving, enabling proactive retention strategies.
@@ -160,9 +161,28 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - [Docker Documentation](https://docs.docker.com/)
 - [Docker Hub](https://hub.docker.com/)
 
-## 👤 Author
+## 👥 Team Antimony
 
-🤵 **Efosa Dave Omosigho**
+🤵 **Efosa Dave Omosigho** (Team Lead)
 - [GitHub Profile](https://github.com/Elphoxa) 🐙
-
 - [LinkedIn Profile](https://www.linkedin.com/in/efosa-omosigho) 💼
+
+🤵 **Philip Ofori Kwaning** (Member)
+- [GitHub Profile](https://github.com/speedcode-x)
+- [LinkedIn Profile](https://www.linkedin.com/in/philip-kwaning)
+
+🤵 **Richmond Kantam Nana Addo Yendam** (Member)
+- [GitHub Profile](https://github.com/RichieRichMoC)
+- [LinkedIn Profile](https://www.linkedin.com/in/richmond-kantam-9b6049114/)
+
+🤵 **Marufu Loveness Enesia** (Member)
+- [GitHub Profile](https://github.com/Lmarufu)
+- [LinkedIn Profile](https://www.linkedin.com/in/loveness-marufu)
+
+🤵 **Abessolo Ateba Abhas** (Member)
+- [GitHub Profile](https://github.com/Abessolo-26)
+- [LinkedIn Profile](https://www.linkedin.com/in/abessolo-ateba-abhas/)
+
+🤵 **Prince Eyram Kofi Adzanku** (Member)
+- [GitHub Profile](https://github.com/prynz-eyram)
+- [LinkedIn Profile](https://www.linkedin.com/in/prince-eyram-kofi-adzanku)
