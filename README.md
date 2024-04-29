@@ -13,6 +13,7 @@
 - [♻ Data Features](#data-features)
 - [📝 Overview](#overview)
 - [📊 Exploratory Data Analysis](#exploratory-data-analysis)
+- [💡 Prerequisites](#prerequisites)
 - [🔧 Installation](#installation)
 - [🚀 Usage](#usage)
 - [📝 Article](#article)
@@ -53,6 +54,20 @@ Explore the dataset used for training the machine learning model. View data visu
 ![Bivariate Analysis](./Images/bivariate.png)
 ![Multivariate Analysis](./Images/multivariate.png)
 
+## 💡 Prerequisites
+
+Before running this project, ensure you have the following dependencies installed:
+
+- Python
+- Streamlit
+- pyodbc
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Plotly
+- Scikit-learn
+
 
 ## 🔧 Installation
 
@@ -65,7 +80,7 @@ Explore the dataset used for training the machine learning model. View data visu
 2. Navigate into the repository directory:
    
     ```bash
-    cd Churn-Prediction-Project
+    cd ChurnGuard-Project
     ```
 
 3. Create a virtual environment
@@ -83,24 +98,24 @@ Explore the dataset used for training the machine learning model. View data visu
 5. Install the required dependencies
 
     ```bash
-        pip install -r requirements.txt
+        pip install -r requirement.txt
     ```
-
-## 🚀 Usage
-
-1. Navigate to `main.py`
-2. Run the FastAPI application:
-
-    ```bash
-    uvicorn app:app --host 0.0.0.0 --port 8000
-    ```
-
-3. Access the API endpoints to predict churn and integrate the API into existing systems.
-![alt text](./Images/fastapi_docs.jpg)
-![alt text](./Images/fast_2.jpg)
-
-
-**Docker Image:** The Docker image for the Churn Prediction Project is available on [Docker Hub](https://hub.docker.com/repository/docker/elphoxa56/churn_guard).
+## 🧭 Usage
+To run the Streamlit app, execute the following command:
+    
+    streamlit run main.py
+    
+- The webpage will automatically open in your default browser
+- Sign in to the app using the following credentials: username= beatit and password:abc123.
+- Use the sidebar to navigate between different pages.
+- Proceed to test a prediction by navigating to the prediction page.
+- Input data or select options as prompted then hit the predict key
+- **Important Notes: 💬** 
+           
+    - Access to the View Data page may be restricted as the secrets file is not committed to Git.
+    - Exploratory Data Analysis (EDA): Provides visualizations to explore the dataset and understand
+        the underlying patterns (Interactive dashboard allows you to interact with the data and explore different visualizations).
+    - Key Performance Indicators (KPIs): Displays important metrics such as churn rate, average total charges, etc.
 
 ## 📝 Article
 
