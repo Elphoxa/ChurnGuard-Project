@@ -13,6 +13,7 @@
 - [♻ Data Features](#data-features)
 - [📝 Overview](#overview)
 - [📊 Exploratory Data Analysis](#exploratory-data-analysis)
+- [📌 Demo](#demo)
 - [💡 Prerequisites](#prerequisites)
 - [🔧 Installation](#installation)
 - [🚀 Usage](#usage)
@@ -53,6 +54,19 @@ Explore the dataset used for training the machine learning model. View data visu
 ![Univariate Analysis](./Images/univariate.png)
 ![Bivariate Analysis](./Images/bivariate.png)
 ![Multivariate Analysis](./Images/multivariate.png)
+
+## 📌 Demo
+### Home Page
+![alt text](./images/Home_page_image.jpg)
+- This image showcases the home page of the Customer Churn Prediction App. Users are greeted with a user-friendly interface where they can access various features of the application.
+
+### Application Interface
+![image](./images/App_image.jpg)
+- Here, you can see the main interface of the application, which offers users the ability to interact with the machine learning model. Users can input data or select options to predict customer churn probability.
+
+### Dashboard
+![alt text](./images/Dashboard_image.jpg)
+- The dashboard provides users with insightful visualizations and key performance indicators (KPIs) related to customer churn. Users can explore different visualizations to gain a deeper understanding of the data and identify trends or patterns.
 
 ## 💡 Prerequisites
 
