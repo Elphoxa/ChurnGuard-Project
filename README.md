@@ -50,6 +50,7 @@ The project involves training machine learning models to predict customer churn 
 ## 📊 Exploratory Data Analysis
 
 Explore the dataset used for training the machine learning model. View data visualizations and insights gained from the analysis in the [Exploratory Data Analysis](./notebooks.ipynb) notebook.
+Click [Here](https://app.powerbi.com/groups/me/reports/3c14bfce-a782-44be-a2a7-db08099b3302/ReportSection?experience=power-bi) to garner insights from the power BI Dashboard.
 
 ![Univariate Analysis](./Images/univariate.png)
 ![Bivariate Analysis](./Images/bivariate.png)
