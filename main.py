@@ -5,11 +5,6 @@ import streamlit_authenticator as stauth
 import yaml
 from yaml.loader import SafeLoader
  
-
-
-
-
-
 # Set Streamlit page configuration
 st.set_page_config(
     page_title='Home page',
@@ -43,7 +38,6 @@ if authentication_status == False:
             
             You can also check the readme file for guidance
             """)
-   
 
 if authentication_status == True:
     # Define main content of the app
@@ -55,7 +49,7 @@ if authentication_status == True:
         #image_path = './images/image.png'  # Replace 'path_to_your_image.jpg' with the actual path to your image
         #st.image(image_path, use_column_width=False, output_format = "auto")
  
-        # st.title('Customer Churn Prediction App')
+        # st.title('CHURN GUARD')
         st.markdown(
             """
             <style>
