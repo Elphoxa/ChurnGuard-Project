@@ -9,6 +9,10 @@ from sklearn.preprocessing import FunctionTransformer, StandardScaler, OneHotEnc
 from sklearn.compose import ColumnTransformer
 from sklearn.base import TransformerMixin
 import datetime
+import streamlit_authenticator as stauth
+import yaml
+from yaml.loader import SafeLoader
+ 
  
  
 st.set_page_config(
@@ -16,6 +20,22 @@ st.set_page_config(
     page_icon=':)',
     layout='wide'
 )
+
+# Load configuration from YAML file
+with open('./config.yaml') as file:
+    config = yaml.load(file, Loader=SafeLoader)
+ 
+# Initialize Streamlit Authenticator with configuration settings
+authenticator = stauth.Authenticate(
+    config['credentials'],
+    config['cookie']['name'],
+    config['cookie']['key'],
+    config['cookie']['expiry_days'],
+    config['preauthorized']
+)
+ 
+# Perform user authentication
+
  
 # Define the LogTransformer class
 class LogTransformer:
@@ -166,10 +186,13 @@ def make_prediction(pipeline):
  
     return prediction, probability
  
- 
+# Check if the user is authenticated
+if not st.session_state.get("authentication_status"):
+    st.info('Please log in to access the application from the MainPage.')
+else:
  
 # Main function
-def main():
+ def main():
    
     pipeline = select_model() # Select model    
    
@@ -219,8 +242,13 @@ def main():
         # Submit button to make prediction
         st.form_submit_button ('Predict', on_click=make_prediction, kwargs=dict(
             pipeline=pipeline))
+        
+    # Add logout button to sidebar
+
  
-if __name__ == '__main__':
+  
+ 
+ if __name__ == '__main__':
     st.title('Predict Churn')
     main()
  
@@ -229,7 +257,7 @@ if __name__ == '__main__':
  
     if not prediction:
         st.markdown('### Prediction would show here')
-    elif prediction == 'Yes':
+    elif prediction == 1:
         probability_yes = probability[0][1] * 100
         st.markdown(f"### The Customer will Churn with a probability of {round(probability_yes, 2)}%")
     else:
