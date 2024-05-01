@@ -257,7 +257,7 @@ else:
  
     if not prediction:
         st.markdown('### Prediction would show here')
-    elif prediction == 0:
+    elif prediction == 1:
         probability_yes = probability[0][1] * 100
         st.markdown(f"### The Customer will Churn with a probability of {round(probability_yes, 2)}%")
     else:
