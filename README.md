@@ -13,6 +13,7 @@
 - [♻ Data Features](#data-features)
 - [📝 Overview](#overview)
 - [📊 Exploratory Data Analysis](#exploratory-data-analysis)
+- [📌 Demo](#demo)
 - [💡 Prerequisites](#prerequisites)
 - [🔧 Installation](#installation)
 - [🚀 Usage](#usage)
@@ -20,7 +21,8 @@
 - [🤝 Contributing](#contributing)
 - [🔏 License](#license)
 - [📚 References](#references)
-- [👤 Author](#author)
+- [👥 Team Antimony](#Team-Antimony)
+
 
 ## 🎈 Introduction
 The ChurnGuard Project is a machine learning initiative aimed at predicting customer churn for an African telecommunications company (Expresso). It empowers providers to proactively retain customers with predictive analytics. The Project aims to develop a machine learning model capable of predicting customer churn. By leveraging historical customer data, the model assists businesses in identifying customers at risk of leaving, enabling proactive retention strategies.
@@ -49,10 +51,24 @@ The project involves training machine learning models to predict customer churn 
 ## 📊 Exploratory Data Analysis
 
 Explore the dataset used for training the machine learning model. View data visualizations and insights gained from the analysis in the [Exploratory Data Analysis](./notebooks.ipynb) notebook.
+Click [Here](https://app.powerbi.com/groups/me/reports/3c14bfce-a782-44be-a2a7-db08099b3302/ReportSection?experience=power-bi) to garner insights from the power BI Dashboard.
 
 ![Univariate Analysis](./Images/univariate.png)
 ![Bivariate Analysis](./Images/bivariate.png)
 ![Multivariate Analysis](./Images/multivariate.png)
+
+## 📌 Demo
+### Home Page
+![alt text](./images/Home_page_image.jpg)
+- This image showcases the home page of the Customer Churn Prediction App. Users are greeted with a user-friendly interface where they can access various features of the application.
+
+### Application Interface
+![image](./images/App_image.jpg)
+- Here, you can see the main interface of the application, which offers users the ability to interact with the machine learning model. Users can input data or select options to predict customer churn probability.
+
+### Dashboard
+![alt text](./images/Dashboard_image.jpg)
+- The dashboard provides users with insightful visualizations and key performance indicators (KPIs) related to customer churn. Users can explore different visualizations to gain a deeper understanding of the data and identify trends or patterns.
 
 ## 💡 Prerequisites
 
@@ -115,7 +131,9 @@ To run the Streamlit app, execute the following command:
     - Access to the View Data page may be restricted as the secrets file is not committed to Git.
     - Exploratory Data Analysis (EDA): Provides visualizations to explore the dataset and understand
         the underlying patterns (Interactive dashboard allows you to interact with the data and explore different visualizations).
-    - Key Performance Indicators (KPIs): Displays important metrics such as churn rate, average total charges, etc.
+    - Key Performance Indicators (KPIs): Displays important metrics such as churn rate, average total revenue per user, average recharge frequency, etc.
+    
+-**Docker Image:** The Docker image for the ChurnGuard API is available on [Docker Hub](https://hub.docker.com/repository/docker/elphoxa56/churn_guard), ensuring efficient API deployment and containerization.
 
 ## 📝 Article
 
@@ -143,9 +161,28 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - [Docker Documentation](https://docs.docker.com/)
 - [Docker Hub](https://hub.docker.com/)
 
-## 👤 Author
+## 👥 Team Antimony
 
-🤵 **Efosa Dave Omosigho**
+🤵 **Efosa Dave Omosigho** (Team Lead)
 - [GitHub Profile](https://github.com/Elphoxa) 🐙
-
 - [LinkedIn Profile](https://www.linkedin.com/in/efosa-omosigho) 💼
+
+🤵 **Philip Ofori Kwaning** (Member)
+- [GitHub Profile](https://github.com/speedcode-x)
+- [LinkedIn Profile](https://www.linkedin.com/in/philip-kwaning)
+
+🤵 **Richmond Kantam Nana Addo Yendam** (Member)
+- [GitHub Profile](https://github.com/RichieRichMoC)
+- [LinkedIn Profile](https://www.linkedin.com/in/richmond-kantam-9b6049114/)
+
+🤵 **Marufu Loveness Enesia** (Member)
+- [GitHub Profile](https://github.com/Lmarufu)
+- [LinkedIn Profile](https://www.linkedin.com/in/loveness-marufu)
+
+🤵 **Abessolo Ateba Abhas** (Member)
+- [GitHub Profile](https://github.com/Abessolo-26)
+- [LinkedIn Profile](https://www.linkedin.com/in/abessolo-ateba-abhas/)
+
+🤵 **Prince Eyram Kofi Adzanku** (Member)
+- [GitHub Profile](https://github.com/prynz-eyram)
+- [LinkedIn Profile](https://www.linkedin.com/in/prince-eyram-kofi-adzanku)
