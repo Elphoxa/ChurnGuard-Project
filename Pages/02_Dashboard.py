@@ -9,7 +9,6 @@ import streamlit_authenticator as stauth
 import yaml
 from yaml.loader import SafeLoader
  
- 
 st.set_page_config(
     page_title='Dashboard',
     page_icon='📈',
@@ -37,14 +36,7 @@ if not st.session_state.get("authentication_status"):
     st.info('Please log in to access the application from the MainPage.')
 else:
    def main():
-
-    data_d = pd.read_csv('./Dataset/Expresso Customer Data.csv', chunksize=100000)
     
-
-    #st.dataframe(data)
-
-    
-    data1 = next(data_d)
     # Access data from session state
     data = st.session_state.get("data_key", None)
     # Check if the user is authenticated
@@ -52,16 +44,14 @@ else:
      st.info('Please Kindly Access the DataPage to Configure your DataSet.')
      
     else: 
-
-      dfz = data.drop(columns=['user_id'])
       
-      table_feature = dfz.columns.tolist()
+      table_feature = data.columns.tolist()
       
       churn_rate = (data["CHURN"].sum() / data.shape[0]) * 100
       On_net_calls = data['ON_NET'].sum()
       average_MONTANT_charges = data['MONTANT'].mean()
       total_revenue = data['REVENUE'].sum()
-      total_Users = data['user_id'].count()
+      total_Users = data['TENURE'].count()
 
 
       if data is not None:
@@ -105,7 +95,7 @@ else:
          
             with st.container():
                      
-                     data_df= next(data_d)
+                     data_df= data
                      data_df.columns.tolist()
 
                      cpp1, cpp2 = st.columns(2)
@@ -152,38 +142,13 @@ else:
                      c1, c2 = st.columns(2)
                   
                      with c1:
-                           fig = px.scatter(data, x=selected_feature1, y=selected_feature2, color=selected_feature2,
-                  color_discrete_map={'Yes': 'Firebrick', 'No': 'blue'},
-                  labels={selected_feature1: selected_feature1, selected_feature2: selected_feature2},
-                  title='Scatter Plot',
-                  height=400, width=500)
-
-   # Update layout
-                           fig.update_layout(xaxis_title=selected_feature1, yaxis_title=selected_feature2, showlegend=True)
-
-   # Display the scatter plot in Streamlit
-                           st.plotly_chart(fig, use_container_width=True)
+                           sns.histplot(data, x=selected_feature1, hue=selected_feature1, multiple="stack")
    
                      with c2:
-                                                   
-                           # Create a pivot table to prepare data for heatmap
-                           pivot_data = data.pivot_table(index=selected_feature1, columns=selected_feature2,  aggfunc='count')
-
-                           # Heatmap using Plotly Express
-                           fig = px.imshow(pivot_data,
-                                          labels={selected_feature1: selected_feature1, selected_feature2: selected_feature2},
-                                          color_continuous_scale='blues',
-                                          title='Patterns by Selected Features',
-                                          height=400, width=500)
-
-                           # Update layout
-                           fig.update_layout(xaxis_title=selected_feature2, yaxis_title=selected_feature1, showlegend=True)
-
-                           # Display the heatmap in Streamlit
-                           st.plotly_chart(fig, use_container_width=True)      
-                                          
+                           sns.histplot(data, x=selected_feature2, hue=selected_feature2, multiple="stack")
+                                           
             with st.container():
-                        df1 = data.drop(columns=['REGION', 'TENURE', 'user_id'])
+                        df1 = data.drop(columns=['REGION', 'TENURE'])
                      
                         qppo1, qppo2, qppo3, qppo4, qppo5, qppo6 = st.columns(6)
                         with qppo1:
@@ -223,16 +188,6 @@ else:
                            plt.title("Correlation Matrix")
                         
                            st.pyplot(fig)
-
-                   
-        # Add logout button to sidebar
- 
- 
-   
- 
+                           
    if __name__ == '__main__':
               main()
- 
-    
- 
-          
