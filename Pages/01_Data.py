@@ -17,7 +17,8 @@ st.set_page_config(
 # Load data function
 @st.cache(allow_output_mutation=True)
 def load_data():
-    # Call the load_data() function from app.py to get df
+    
+    # Call the load_data() function from app.py to get dataframe
     df = apy.load_data()
     # Drop 'customerID' column
     if 'user_id' in df.columns:
@@ -38,7 +39,7 @@ def select_features(feature_type, data_df):
 
 # Check if the user is authenticated
 if not st.session_state.get("authentication_status"):
-    st.info('Please log in to access the application from the homepage.')
+    st.info('Please log in to access the application from the Home page.')
 else:
     # Title of the page
     st.title('Expresso Customer Data')

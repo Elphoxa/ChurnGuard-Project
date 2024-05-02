@@ -1,9 +1,9 @@
 credentials:
   usernames:
-    beatit:
-      email: richmondkantam@gmail.com
+    antimony:
+      email: deofis2015@gmail.com
       logged_in: False # Will be managed automatically
-      name: Richmond Kantam Nana Addo Yendam
+      name: Efosa Dave Omosigho
       password: 'abc123' # Will be hashed automatically
 cookie:
   expiry_days: 30
@@ -11,5 +11,5 @@ cookie:
   name: cookie_name
 preauthorized:
   emails:
-  - richmond.kantam@azubiafrica.org
+  - efosa.dave@azubiafrica.org
 users:
